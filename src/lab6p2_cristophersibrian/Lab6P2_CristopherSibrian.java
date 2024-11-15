@@ -181,7 +181,7 @@ public class Lab6P2_CristopherSibrian {
     public static void show(int[][] matriz) {
         for (int i = 0; i < matriz.length; i++) {
             for (int j = 0; j < matriz[i].length; j++) {
-                System.out.print(matriz[i][j] + " ");
+                System.out.print("[" + matriz[i][j] + "]");
             }
             System.out.println();
         }
@@ -212,7 +212,6 @@ public class Lab6P2_CristopherSibrian {
         int[] temp = matriz[fila1];
         matriz[fila1] = matriz[fila2];
         matriz[fila2] = temp;
-        System.out.println("Intercambiando fila " + fila1 + " y fila " + fila2);
     }
 
     public static void inter(int[][] matriz, int col1, int col2) {
@@ -221,7 +220,6 @@ public class Lab6P2_CristopherSibrian {
             matriz[i][col1] = matriz[i][col2];
             matriz[i][col2] = temp;
         }
-        System.out.println("Intercambiando columna " + col1 + " y columna " + col2);
     }
 
     public static void cabio(int[][] matriz, int fila, int columna) {
@@ -230,7 +228,6 @@ public class Lab6P2_CristopherSibrian {
             matriz[fila][i] = matriz[i][columna];
             matriz[i][columna] = temp;
         }
-        System.out.println("Intercambiando fila " + fila + " y columna " + columna);
     }
 
 }
